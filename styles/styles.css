@@ -12,9 +12,9 @@
       z-index: 2;
 } */
 
-body{
-    font-family: 'Roboto', sans-serif;
-}
+/* html {
+    width: 100vw;
+} */
 
 #oddTitle{
     font-family: 'Righteous', cursive;
@@ -22,45 +22,195 @@ body{
     text-align: center;
     color: #0B86BF;
 }
-
-.work{
-    padding: 50px 100px;
+main{
+    font-family: 'Roboto', sans-serif;
 }
 
 #scrollspyHome {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 60px 75px;
+    justify-content: flex-start;
+    height: 750px;
+    padding: 70px 75px;
 
 }
+
+#demoreel{
+    padding: 25px;
+}
+
+#demoVid {
+    /* width: 560px; */
+    width: 50vw;
+    aspect-ratio: 16/9;
+}
+
+
+.sectionTitle {
+    text-align: center;
+    padding-bottom:25px;
+} 
+
 
 #intro {
     width: 50vw;
+    text-align: center ;
 }
 
 #scrollspyServices {
-    display: flex;
-    align-items: center; 
-    flex-flow: column;
+    padding: 70px 100px 100px 100px;
+}
+#scrollspyWork{
+    padding: 70px 100px;
 }
 
+#scrollspyTestimonials{
+    padding: 70px 100px;
+}
+
+#scrollspyAbout{
+    padding: 70px 100px;
+    background-color: rgb(240, 247, 251);
+}
+.about-us{
+    line-height: 2.5rem;
+}
+
+#scrollspyContact{
+    text-align: center;
+    padding: 90px 100px 150px 100px;
+    background-color: rgb(245, 248, 250);
+}
 /* #service-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px 20px;
 } */
 
+.sectionWrapper {
+    width: 100%;
+    background-color: rgb(240, 247, 251);
+
+}
+
 .servicebox {
     /* width: 300px; */
-    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
     /* margin: 5px; */
+}
+
+#service1 {
+    background: url(../assets/pics/liveStreaming2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#service2 {
+    background: url(../assets/pics/liveStreaming3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+}
+
+#service3 {
+    background: url(../assets/pics/audio3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+}
+
+#service4 {
+    background: url(../assets/pics/videoEditing1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(216, 211, 211);
+    height: 90%;
+    width: 90%;
+    opacity: 0.9;
+    padding: 5%
+}
+
+ul {
+    list-style-type: square;
 }
 
 #video {
     /* background-image: url(../assets/pics/videoEditing1.jpg); */
 }
 
-#testimonials{
-    padding: 50px 100px;
+footer {
+    text-align: right;
+    padding-right: 25px;
+    background-color: rgb(226, 226, 226);
+}
+
+
+.carousel .carousel-control-prev-icon {
+    /* change fill="currentColor" to %23fff to make it white  */
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%currentColor' class='bi bi-arrow-left-square-fill' viewBox='0 0 16 16'><path d='M16 14a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12zm-4.5-6.5H5.707l2.147-2.146a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708-.708L5.707 8.5H11.5a.5.5 0 0 0 0-1z'/></svg>"); 
+}
+.carousel .carousel-control-next-icon {
+    /* change fill="currentColor" to %23fff to make it white  */
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16"><path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/></svg>'); 
+}
+
+/* Following bootstrap breakpoints */
+@media only screen and (max-width: 576px) {
+    
+
+
+    #scrollspyHome {
+        padding: 10px;
+        justify-content: flex-start;
+        height: 600px;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    #intro {
+        /* padding-top: 30px; */
+        width: 100%;
+    }
+
+    #scrollspyHome {
+        justify-content: space-evenly;
+    }
+
+    #scrollspyServices, #scrollspyWork, #scrollspyTestimonials {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #demoVid {
+        /* margin-top: 30px; */
+        width: 90vw;
+    }
+
+    /* .container {
+        margin:0px;
+    } */
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 1400px) {
 }
