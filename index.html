@@ -6,19 +6,18 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto&display=swap" rel="stylesheet">  <link rel="stylesheet" href="./styles/styles.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <title>Odd Owl Media</title>
 </head>
 <body>
     <!-- OOM ICON -->
-    <div id="top-container">
-        <h1 id="oddTitle">Odd Owl Media</h1>
+    <div id="top-container" class="bg-light">
+        <h1 id="oddTitle">odd owl media</h1>
     </div>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <!-- NAVIGATION -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top p-3">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
@@ -26,16 +25,22 @@
             <div class="navbar-collapse collapse justify-content-center" id="navbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyHome" >Home</a> 
+                        <img src="./assets/pics/OOM_circle.png" class="nav-link border rounded-circle" alt="" width="45">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#top-container">Home</a> 
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#scrollspyServices">Services</a> 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#scrollspyWork">Our Work</a> 
+                        <a class="nav-link" href="#scrollspyWork" >Our Work</a> 
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#scrollspyAbout">About Us</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#scrollspyTestimonials">Testimonials</a> 
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#scrollspyContact">Contact</a>
@@ -43,104 +48,171 @@
                 </ul>
             </div>
         </div>
-         
     </nav>
+    
     <main>
+        <!-- HOME -->
         <div id="scrollspyHome">
-            <p id="intro">Odd Owl Media is a video production company based in and around Alcona, Innisfil, and Barrie, Ontario</p>
+            <h3 id="intro">Odd Owl Media is a video production company based in and around Alcona, Innisfil, and Barrie, Ontario</h3>
             <div id="demoreel">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/UuuiYwJUHJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe id="demoVid" src="https://www.youtube.com/embed/UuuiYwJUHJI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
         </div>
-        <div id="scrollspyServices">
-            <h1>Services</h1>
-            <div id="container-fluid">
-                <div class="row row-cols-2 row-cols-sm-6 g-5">
-                    <div id="video" class="col">
-                        <div class="card servicebox">Video Editing</div>
+        <!-- SERVICES -->
+        <div class="sectionWrapper bg-light">
+            <div class="container" id="scrollspyServices">
+                <h1 class="sectionTitle">Services</h1>
+                <div class="row gx-5">
+                    <div class="col-sm-12 col-md-12 col-lg-6 gy-2">
+                        <div id="service1" class="shadow-lg p-3 border bg-light rounded servicebox">
+                            <div class="overlay rounded">
+                                <h3>Pre-Production</h3>
+                                <ul>
+                                    <li>Storyboarding</li>
+                                    <li>Scheduling</li>
+                                </ul>
+                            </div>
+                        </div> 
                     </div>
-                    <div id="audio" class="col">
-                        <div class="card servicebox">Multitrack Audio Recording adn Editing</div>
+                    <div class="col-sm-12 col-md-12 col-lg-6 gy-2">
+                        <div id="service2" class="shadow-lg p-3 border bg-light rounded servicebox">
+                            <div class="overlay rounded">
+                                <h3>Production</h3>
+                                <ul>
+                                    <li>Corporate videos</li>
+                                    <li>Multi-camera events</li>
+                                    <li>Live streaming events</li>
+                                </ul>
+                            </div>
+                        </div>                 
                     </div>
-                    <div id="streaming" class="col">
-                        <div class="card servicebox">Live Streaming</div>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-sm-12 col-md-12 col-lg-6 gy-5">
+                        <div id="service3" class="shadow-lg p-3 border bg-light rounded servicebox">
+                            <div class="overlay rounded">
+                                <h3>Post-Production</h3>
+                                <ul>
+                                    <li>Video editing</li>
+                                    <li>Audio editing</li>
+                                    <li>Sound design</li>
+                                    <li>Color grading</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-sm-12 col-md-12 col-lg-6 gy-5">
+                        <div id="service4" class="shadow-lg p-3 border bg-light rounded servicebox">
+                            <div class="overlay rounded">
+                                <h3>Audio Recording & Sound Design</h3>
+                                <ul>
+                                    <li>Multi-track recording</li>
+                                    <li>Dialog editing</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div> 
+        </div>
+        
+        <!-- WORK -->
+        <div class="" id="scrollspyWork">
+            <div class="work">
+                <h1 class="sectionTitle">Our Work</h1>
+                <div class="row justify-content-end">
+                    <div class="col-lg-7 our-work d-flex align-items-center">
+                        <p>Odd Owl Media is a multi-faceted production company. Our services can eb utilized in a breadth of settings: corporate videos, short films, multi-camera events, concerts and music videos, or even live streaming events.</p>
                     </div>
-                    <div id="colorGrading" class="col">
-                        <div class="card servicebox">Color Grading</div>
+                    <div class="col-lg-4 ">
+                        <div id="mediaCarousel" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#mediaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#mediaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#mediaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/pics/liveStreaming1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/pics/liveStreaming2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/pics/liveStreaming3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#mediaCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <br>
-
-            <div class="container">
-                <div class="row row-cols-2 row-cols-lg-5 g-4 g-lg-3">
-                  <div class="col">
-                    <div class="p-3 border bg-light ">Row column</div>
-                  </div>
-                  <div class="col">
-                    <div class="p-3 border bg-light ">Row column</div>
-                  </div>
-                  <div class="col">
-                    <div class="p-3 border bg-light ">Row column</div>
-                  </div>
-                  <div class="col">
-                    <div class="p-3 border bg-light ">Row column</div>
-                  </div>
-                </div>
-            </div>
-
         </div>
-        <br>
-        <br>
-        <div class="container" id="scrollspyWork">
+         
+        <!-- ABOUT -->
+        <div class="bg-light" id="scrollspyAbout">
+            <h1 class="sectionTitle">About Us</h1>
             <div class="row">
-                <div class="justify-content-center work">
-                    <h1>Our Work</h1>
-                    <p>Odd Owl Media is a multi-faceted production company. Our services can eb utilized in a breadth of settings: corporate videos, short films, multi-camera events, concerts and music videos, or even live streaming events.</p>
+                <div class="col-lg-4">
+                    <img src="./assets/pics/audio1.jpg" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-7 about-us d-flex align-items-center">
+                    <p>
+                        Odd Owl Media was established in 2021 by Max Kennedy.
+                        <br>
+                        Max got his start in audio recording a mixing, which led to an in-depth, real-world education in video production. He fell in love with being able to take ideas from paper to screen, and after buying his first camera, he was hooked.<br>
+                        As a graduate from Humber College's Broadcast Television / Videography program, Max went on to work for companies such as Deluxe Post Production, Insight (Big Brother Canada), Castlewood (Cash Cab), and Portage Creative. <br>
+                        Clients include MT Walker, Orson Wilds, Glow Day Spa, Carey & Toni Nieuwhof, The Goldies band, Connexus Church.
+                    </p>
                 </div>
             </div>
+        </div>
+
+        <!-- TESTIMONIALS -->
+
+        <div class ="container" id="scrollspyTestimonials">
+            <h1 class="sectionTitle">Testimonials</h1>
+            <div class="row gx-5">
+                <div class="col-sm-12 col-md-12 col-lg-6 gy-5 testimonialbox">
+                    <div class="shadow-lg p-3 border rounded bg-light">Duis maximus magna nec turpis congue fermentum. In pharetra urna et velit bibendum, id tincidunt ex malesuada. Pellentesque a nunc volutpat nibh lacinia lacinia. Nulla sed lacus justo. Maecenas eleifend pharetra lectus. Sed efficitur ante nec aliquet tristique. Aenean auctor, ex sed ullamcorper elementum, lorem turpis vulputate lectus, a volutpat.<br/>-ClientName</div> 
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-6 gy-5 testimonialbox">
+                    <div class="shadow-lg p-3 border rounded bg-light">Duis maximus magna nec turpis congue fermentum. In pharetra urna et velit bibendum, id tincidunt ex malesuada. Pellentesque a nunc volutpat nibh lacinia lacinia. Nulla sed lacus justo. Maecenas eleifend pharetra lectus. Sed efficitur ante nec aliquet tristique. Aenean auctor, ex sed ullamcorper elementum, lorem turpis vulputate lectus, a volutpat.<br/>-ClientName</div> 
+                </div>
+            </div>
+            <div class="row gx-5">
+                <div class="col-sm-12 col-md-12 col-lg-6 gy-5 testimonialbox">
+                    <div class="shadow-lg p-3 border rounded bg-light">Duis maximus magna nec turpis congue fermentum. In pharetra urna et velit bibendum, id tincidunt ex malesuada. Pellentesque a nunc volutpat nibh lacinia lacinia. Nulla sed lacus justo. Maecenas eleifend pharetra lectus. Sed efficitur ante nec aliquet tristique. Aenean auctor, ex sed ullamcorper elementum, lorem turpis vulputate lectus, a volutpat.<br/>-ClientName</div> 
+                </div> 
+                
+                <div class="col-sm-12 col-md-12 col-lg-6 gy-5 testimonialbox">
+                    <div class="shadow-lg p-3 border rounded bg-light">Duis maximus magna nec turpis congue fermentum. In pharetra urna et velit bibendum, id tincidunt ex malesuada. Pellentesque a nunc volutpat nibh lacinia lacinia. Nulla sed lacus justo. Maecenas eleifend pharetra lectus. Sed efficitur ante nec aliquet tristique. Aenean auctor, ex sed ullamcorper elementum, lorem turpis vulputate lectus, a volutpat.<br/>-ClientName</div> 
+                </div> 
+            </div>
+        </div>
 
 
+        <!-- CONTACT -->
+        
+        <div class="bg-light" id="scrollspyContact">
+            <h1 class="sectionTitle">Contact</h1><br />
+            <h3>email: <a href="mailto:max@oddowlmedia.com">max@oddowlmedia.com</a></h3>
+            <h3>phone: <a href="tel:6475981931">647-598-1931</a></h3>
+            <a href="https://www.facebook.com/oddowlmedia" target="_blank"><img src="./assets/pics/facebookIcon.png" alt=""></a>
+            <a href="https://www.instagram.com/oddowlm/" target="_blank"><img src="./assets/pics/instaIcon.png" alt=""></a>
         </div>
-        <div class ="container" id="testimonials">
-            <h1>Testimonials</h1>
-            <div class="row g-3">
-                <div class="col-sm-6 gx-3 p-3 card testimonialbox">
-                    text
-                </div>
-                <div class="col-sm-6 p-3 card testimonialbox">
-                    text
-                </div>
-            </div>
-                <div class="row gx-3">
-                <div class="col-sm-6 p-3 card testimonialbox">
-                    text
-                </div>
-                <div class="col-sm-6 p-3 card testimonialbox">
-                    text
-                </div>
-            </div>
-        </div>
-        <div id="scrollspyAbout">
-            <h1>About Us</h1>
-            <p>
-                Odd Owl Media was established in 2021 by Max Kennedy. <br>
-                <br>
-                Max got his start in audio recording a mixing, which led to an in-depth, real-world education in video production. He fell in love with being able to take ideas from paper to screen, and after buying his first camera, he was hooked.<br>
-                As a graduate from Humber College's Broadcast Television / Videography program, Max went on to work for companies such as Deluxe Post Production, Insight (Big Brother Canada), Castlewood (Cash Cab), and Portage Creative. <br>
-                Clients include MT Walker, Orson Wilds, Glow Day Spa, Carey & Toni Nieuwhof, The Goldies band, Connexus Church.
-            </p>
-        </div>
-        <div id="scrollspyContact">
-            <h1>Conctact</h1>
-            <p>email</p>
-            <p>phone</p>
-            <p>linkedIn</p>
-        </div>
+        
+
     </main>
     <footer>
-        <span>copyright</span>
+        <span>© Odd Owl Media, 2021</span>
     </footer>
 </body>
 </html>
