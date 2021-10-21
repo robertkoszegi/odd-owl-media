@@ -4,9 +4,7 @@
     width: 100%
   }
 
-  #top-container{
-      text-align: center;
-  }
+
 
   #myHeader{
       z-index: 2;
@@ -15,12 +13,23 @@
 /* html {
     width: 100vw;
 } */
+h1{
+    font-family: 'Righteous', cursive;
+    color:#4b4b4b;
+    font-size: 5em;
+}
+
+/* #top-container{
+    background-color: #F8F9FA;
+} */
 
 #oddTitle{
     font-family: 'Righteous', cursive;
     font-size: 5rem;
     text-align: center;
     color: #0B86BF;
+    text-shadow: 2px 2px #B43FF8;
+    margin: 0;
 }
 main{
     font-family: 'Roboto', sans-serif;
@@ -59,10 +68,13 @@ main{
 }
 
 #scrollspyServices {
+    /* margin: 0px 0px; */
+    width: 100%;
     padding: 70px 100px 100px 100px;
 }
 #scrollspyWork{
     padding: 70px 100px;
+    
 }
 
 #scrollspyTestimonials{
@@ -71,31 +83,32 @@ main{
 
 #scrollspyAbout{
     padding: 70px 100px;
-    background-color: rgb(240, 247, 251);
+
 }
 .about-us{
     line-height: 2.5rem;
+}
+.our-work{
+    line-height: 2.5rem;
+}
+.container > .our-work{
+    margin-right:0px;
 }
 
 #scrollspyContact{
     text-align: center;
     padding: 90px 100px 150px 100px;
-    background-color: rgb(245, 248, 250);
+
 }
-/* #service-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px 20px;
-} */
 
 .sectionWrapper {
     width: 100%;
-    background-color: rgb(240, 247, 251);
+
 
 }
 
 .servicebox {
-    /* width: 300px; */
+    /* min-width: 446px; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -135,10 +148,10 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(216, 211, 211);
+    background-color: rgb(231, 231, 231);
     height: 90%;
     width: 90%;
-    opacity: 0.9;
+    opacity: 0.95;
     padding: 5%
 }
 

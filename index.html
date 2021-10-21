@@ -13,17 +13,20 @@
 </head>
 <body>
     <!-- OOM ICON -->
-    <div id="top-container">
-        <h1 id="oddTitle">Odd Owl Media</h1>
+    <div id="top-container" class="bg-light">
+        <h1 id="oddTitle">odd owl media</h1>
     </div>
     <!-- NAVIGATION -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light sticky-top p-3">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar">
                 <span class="navbar-toggler-icon"></span>
               </button>
             <div class="navbar-collapse collapse justify-content-center" id="navbar">
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <img src="./assets/pics/OOM_circle.png" class="nav-link border rounded-circle" alt="" width="45">
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#top-container">Home</a> 
                     </li>
@@ -56,14 +59,14 @@
             </div>
         </div>
         <!-- SERVICES -->
-        <div class="sectionWrapper">
+        <div class="sectionWrapper bg-light">
             <div class="container" id="scrollspyServices">
                 <h1 class="sectionTitle">Services</h1>
                 <div class="row gx-5">
-                    <div class="col-sm-12 col-md-12 col-lg-6 gy-5">
+                    <div class="col-sm-12 col-md-12 col-lg-6 gy-2">
                         <div id="service1" class="shadow-lg p-3 border bg-light rounded servicebox">
                             <div class="overlay rounded">
-                                <h2>Pre-Production</h2>
+                                <h3>Pre-Production</h3>
                                 <ul>
                                     <li>Storyboarding</li>
                                     <li>Scheduling</li>
@@ -71,10 +74,10 @@
                             </div>
                         </div> 
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6 gy-5">
+                    <div class="col-sm-12 col-md-12 col-lg-6 gy-2">
                         <div id="service2" class="shadow-lg p-3 border bg-light rounded servicebox">
                             <div class="overlay rounded">
-                                <h2>Production</h2>
+                                <h3>Production</h3>
                                 <ul>
                                     <li>Corporate videos</li>
                                     <li>Multi-camera events</li>
@@ -88,7 +91,7 @@
                     <div class="col-sm-12 col-md-12 col-lg-6 gy-5">
                         <div id="service3" class="shadow-lg p-3 border bg-light rounded servicebox">
                             <div class="overlay rounded">
-                                <h2>Post-Production</h2>
+                                <h3>Post-Production</h3>
                                 <ul>
                                     <li>Video editing</li>
                                     <li>Audio editing</li>
@@ -101,7 +104,7 @@
                     <div class="col-sm-12 col-md-12 col-lg-6 gy-5">
                         <div id="service4" class="shadow-lg p-3 border bg-light rounded servicebox">
                             <div class="overlay rounded">
-                                <h2>Audio Recording & Sound Design</h2>
+                                <h3>Audio Recording & Sound Design</h3>
                                 <ul>
                                     <li>Multi-track recording</li>
                                     <li>Dialog editing</li>
@@ -114,53 +117,53 @@
         </div>
         
         <!-- WORK -->
-        <div class="container" id="scrollspyWork">
-            
-            <div class="row">
-                <div class="justify-content-center work">
-                    <h1 class="sectionTitle">Our Work</h1>
-                    <!-- add a .carousel style tag in css, can do overflow:hidden for cropping -->
-                    <p>Odd Owl Media is a multi-faceted production company. Our services can eb utilized in a breadth of settings: corporate videos, short films, multi-camera events, concerts and music videos, or even live streaming events.</p>
-                    <div id="mediaCarousel" class="carousel slide">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#mediaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#mediaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#mediaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <div class="" id="scrollspyWork">
+            <div class="work">
+                <h1 class="sectionTitle">Our Work</h1>
+                <div class="row justify-content-end">
+                    <div class="col-lg-7 our-work d-flex align-items-center">
+                        <p>Odd Owl Media is a multi-faceted production company. Our services can eb utilized in a breadth of settings: corporate videos, short films, multi-camera events, concerts and music videos, or even live streaming events.</p>
+                    </div>
+                    <div class="col-lg-4 ">
+                        <div id="mediaCarousel" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#mediaCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#mediaCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#mediaCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="./assets/pics/liveStreaming1.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/pics/liveStreaming2.jpg" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="./assets/pics/liveStreaming3.jpg" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#mediaCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="./assets/pics/liveStreaming1.jpg" class="d-block w-100" alt="..." height="600">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./assets/pics/colorGrading1.jpg" class="d-block w-100" alt="..." height="600">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="./assets/pics/videoEditing1.jpg" class="d-block w-100" alt="..." height="600">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#mediaCarousel" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#mediaCarousel" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
-
-
         </div>
          
         <!-- ABOUT -->
-        <div id="scrollspyAbout">
+        <div class="bg-light" id="scrollspyAbout">
             <h1 class="sectionTitle">About Us</h1>
             <div class="row">
                 <div class="col-lg-4">
                     <img src="./assets/pics/audio1.jpg" class="img-fluid rounded">
                 </div>
-                <div class="col-lg-7 about-us">
+                <div class="col-lg-7 about-us d-flex align-items-center">
                     <p>
                         Odd Owl Media was established in 2021 by Max Kennedy.
                         <br>
@@ -197,15 +200,15 @@
 
 
         <!-- CONTACT -->
-        <div class="sectionWrapper">
-            <div id="scrollspyContact">
-                <h1 class="sectionTitle">Contact</h1><br />
-                <h3>email: <a href="mailto:max@oddowlmedia.com">max@oddowlmedia.com</a></h3>
-                <h3>phone: <a href="tel:6475981931">647-598-1931</a></h3>
-                <a href="https://www.facebook.com/oddowlmedia" target="_blank"><img src="./assets/pics/facebookIcon.png" alt=""></a>
-                <a href="https://www.instagram.com/oddowlm/" target="_blank"><img src="./assets/pics/instaIcon.png" alt=""></a>
-            </div>
+        
+        <div class="bg-light" id="scrollspyContact">
+            <h1 class="sectionTitle">Contact</h1><br />
+            <h3>email: <a href="mailto:max@oddowlmedia.com">max@oddowlmedia.com</a></h3>
+            <h3>phone: <a href="tel:6475981931">647-598-1931</a></h3>
+            <a href="https://www.facebook.com/oddowlmedia" target="_blank"><img src="./assets/pics/facebookIcon.png" alt=""></a>
+            <a href="https://www.instagram.com/oddowlm/" target="_blank"><img src="./assets/pics/instaIcon.png" alt=""></a>
         </div>
+        
 
     </main>
     <footer>
